@@ -9,7 +9,10 @@ public class Main {
         Method[] methods = greetings.getClass().getDeclaredMethods();
 
         for (Method method: methods) {
-            System.out.println(method.getAnnotation(DevAnnotation.class));
+          String devName = method.getAnnotation(DevAnnotation.class).DevName();
+          String devSurname = method.getAnnotation(DevAnnotation.class).DevSurname();
+          System.out.printf("The method is '%s', written by %s %s %n", method.getName(), devName, devSurname);
+
         }
 
 
