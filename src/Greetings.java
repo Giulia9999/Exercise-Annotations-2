@@ -1,8 +1,8 @@
 
 public class Greetings {
     @DevAnnotation(DevName = "John", DevSurname = "Walker")
-    public void sayWelcome(){}
+    public String sayWelcome(){return "";}
     
     @DevAnnotation(DevName = "Mark", DevSurname = "Brown")
-    public void sayGoodbye(){}
+    public String sayGoodbye(){return "";}
 }
